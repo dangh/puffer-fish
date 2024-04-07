@@ -2,7 +2,11 @@
 
 > Text Expansions for [Fish](https://fishshell.com/)
 
-Typing consecutive dots after `..` will automatically expand to `../..`, then `../../..` and so on.  It expands in place as you type to allow directory tab-completion to work.  This can be useful with any command where you want to reference a parent directory that is more than one back.  i.e. `cd ....` or `vi .../Cargo.toml`.
+Typing `..` will automatically expand to `../`.
+
+Typing `/` after `./` will automatically expand to `./../` then `./../../` and so on.
+
+It expands in place as you type to allow directory tab-completion to work.  This can be useful with any command where you want to reference a parent directory that is more than one back.  i.e. `cd ..//` or `vi ..//Cargo.toml`.
 
 ![dot dot demo](./media/dot-dot-demo.gif)
 

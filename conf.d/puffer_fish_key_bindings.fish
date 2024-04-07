@@ -9,6 +9,7 @@ function _puffer_fish_key_bindings --on-variable fish_key_bindings
     end
 
     bind --mode $modes[1] . _puffer_fish_expand_dots
+    bind --mode $modes[1] / _puffer_fish_expand_slash
     bind --mode $modes[1] ! _puffer_fish_expand_bang
     bind --mode $modes[1] '$' _puffer_fish_expand_lastarg
     bind --mode $modes[2] --erase . ! '$'
